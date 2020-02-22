@@ -23,7 +23,7 @@ public class tweenRotation : MonoBehaviour
         if (rigidbody.velocity.magnitude < minVelocity)
             return;
         
-        // Updated v Macros\lookAtVelocityHelpet
+        // Updated v Macros\lookAtVelocityHelper
         // Vsako 1 časovno enoto se sem vpiše vektor hitrosti
         targetVector = (Vector2)Variables.Object(gameObject).Get("targetAngles");
 
