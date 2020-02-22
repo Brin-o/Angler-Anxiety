@@ -19,19 +19,27 @@ public class tweenRotation : MonoBehaviour
 
     private void FixedUpdate() {
         
+        // Če se ne premika dovolj, pusti na miru
         if (rigidbody.velocity.magnitude < minVelocity)
             return;
         
+        // Updated v Macros\lookAtVelocityHelpet
+        // Vsako 1 časovno enoto se sem vpiše vektor hitrosti
         targetVector = (Vector2)Variables.Object(gameObject).Get("targetAngles");
+
+        // Kot med hitrostjo in vertikalo
         angle = Vector2.SignedAngle (Vector2.up, targetVector);
 
+        // Določi če naj se nagne gor al dol
         if (angle > 15)
             angle = 15;
         if (angle < -50)
             angle = -50;
 
-
+        // 
         var tarVector = new Vector3 (transform.position.x, transform.position.z, angle);
+
+        // Počasi rotiraj proti temu vektorju
         transform.DORotate(tarVector, rotationTimer).SetUpdate(UpdateType.Fixed, true);
 
     }
