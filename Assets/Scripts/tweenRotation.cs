@@ -13,6 +13,10 @@ public class tweenRotation : MonoBehaviour
     [SerializeField] float minVelocity = 0.1f;
     public float angle;
 
+    private void Start() {
+        DOTween.SetTweensCapacity(500, 50);
+    }
+
     private void FixedUpdate() {
         
         if (rigidbody.velocity.magnitude < minVelocity)
