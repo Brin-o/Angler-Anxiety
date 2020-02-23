@@ -35,7 +35,6 @@ public class ScaleByVelocity : MonoBehaviour
 		//if (Mathf.Approximately (velocity, 0f))
 		if (velocity < velocityGate)
 			transform.DOScale(originalScale, slowTweenTimer);
-			Debug.Log("Velocity majhen- grem na 1/1!");
 			//TODO: Ko se speeda up hočem animacijo potegnit iz 1,1 v karkoli bi moralo biti
 
 		var amount = velocity * strength + bias;
