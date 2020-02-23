@@ -43,7 +43,6 @@ public class setCurrentTexts : MonoBehaviour
         else
         {
             transform.DOJump(outPos.position, 2f, 1, 0.75f);
-            Debug.Log("Prevlki");
             var currentActor = GameObject.FindGameObjectWithTag("Actor");
             currentActor.gameObject.SetActive(false);
             return;
