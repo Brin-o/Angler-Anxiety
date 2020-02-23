@@ -9,6 +9,12 @@ public class fToExpand : MonoBehaviour
     [SerializeField]GameObject light3;
     int currentLevel = 1;
     [SerializeField]musicWrangler music;
+    [SerializeField] GameObject crabHappy;
+    [SerializeField] GameObject crabSad;
+    [SerializeField] GameObject firstWall;
+    [SerializeField] GameObject secondWall;
+    GameObject[] listVreck;
+
 
     private void Start() {
         light1.SetActive(true);
@@ -17,6 +23,10 @@ public class fToExpand : MonoBehaviour
     }
     void Update()
     {
+        listVreck = GameObject.FindGameObjectsWithTag("Vrecka");
+        var stevilkaVreck = listVreck.Length;
+
+        
         if(Input.GetKeyDown(KeyCode.F))
         {
             Debug.Log("Make light bigger");
@@ -25,14 +35,11 @@ public class fToExpand : MonoBehaviour
                 light1.SetActive(false);
                 light2.SetActive(true);
                 music.clipNum = 2;
+                crabHappy.SetActive(true);
+                crabSad.SetActive(false);
+                firstWall.SetActive(false);
+                
             }
-            if(currentLevel == 3)
-            {
-                return;
-            }
-           
-            
-
         }
     }
 }

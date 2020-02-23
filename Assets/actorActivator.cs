@@ -20,6 +20,7 @@ public class actorActivator : MonoBehaviour
             dialogueMachine.gameObject.SetActive(true);
             ActorToActivate.gameObject.SetActive(true);
             ActorToActivate.GetComponent<dialogueList>().initDialogue();
+            text.gameObject.SetActive(true);
         }
     }
     
@@ -27,7 +28,6 @@ public class actorActivator : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             Debug.Log("PlayerjeNot");
-            text.gameObject.SetActive(true);
 
         }
     }
