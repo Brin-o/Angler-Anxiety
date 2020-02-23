@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Actor
+  - actorActivator
+  - textReminder
   layers:
   - Default
   - TransparentFX

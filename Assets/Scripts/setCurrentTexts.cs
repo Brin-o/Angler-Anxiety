@@ -10,6 +10,7 @@ public class setCurrentTexts : MonoBehaviour
     public List<string> textQueue;
     public string nameOfCharacter;
     public int dialogueCount;
+    public int maxPages;
 
     [SerializeField] Transform outPos;
     [SerializeField] Transform inPos;
@@ -25,7 +26,7 @@ public class setCurrentTexts : MonoBehaviour
     public void DialogAdvance()
     {
 
-
+        maxPages = textQueue.Count;
 
         if (dialogueCount < textQueue.Count)
         {            
@@ -42,7 +43,6 @@ public class setCurrentTexts : MonoBehaviour
         else
         {
             transform.DOJump(outPos.position, 2f, 1, 0.75f);
-            Debug.Log("Prevlki");
             var currentActor = GameObject.FindGameObjectWithTag("Actor");
             currentActor.gameObject.SetActive(false);
             return;
@@ -60,4 +60,12 @@ public class setCurrentTexts : MonoBehaviour
     {
         Variables.Object(gameObject).Set("dialogueCurrentName", nextName);
     }
+    public void dialogueCountReset(List<string> yourtext)
+    {
+        if (yourtext == textQueue)
+            return;
+        dialogueCount = 0;
+    }
+
+
 }

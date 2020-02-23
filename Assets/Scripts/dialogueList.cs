@@ -11,7 +11,7 @@ public class dialogueList : MonoBehaviour
     public List<string> thingsToSay;
     [SerializeField] setCurrentTexts dialogueController = default;
 
-    void Start()
+    public void initDialogue()
     {
         dialogueController.dialogueCount = 0;
         dialogueController.textQueue = thingsToSay;
