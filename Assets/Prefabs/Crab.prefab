@@ -30,6 +30,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1387913619808941817}
+  - {fileID: 7111526730915263946}
+  - {fileID: 1790153671016397805}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -201,3 +203,216 @@ MonoBehaviour:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
     - {fileID: 11400000, guid: a8da1e67c1361f14081662f4d5cedff3, type: 2}
+--- !u!1 &7470558681690692337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790153671016397805}
+  - component: {fileID: 8640723504406392289}
+  - component: {fileID: 957254791031102526}
+  m_Layer: 0
+  m_Name: crabCollisionDetector
+  m_TagString: actorActivator
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1790153671016397805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7470558681690692337}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.51, y: -3.63, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1387913619725868948}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8640723504406392289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7470558681690692337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 545f92dfab95a6e4d81867bcb2846ab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActorToActivate: {fileID: 0}
+  textToDisplay: .. Press the left mouse button to talk ..
+  text: {fileID: 0}
+  dialogueMachine: {fileID: 0}
+--- !u!60 &957254791031102526
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7470558681690692337}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2.921221, y: 1.9808474}
+      - {x: -0.8231199, y: 1.6736746}
+      - {x: -0.6517534, y: -1.9178038}
+      - {x: 2.8693244, y: -1.9178019}
+      - {x: 5.6847153, y: 0.15975666}
+--- !u!1001 &7567085794087598135
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1387913619725868948}
+    m_Modifications:
+    - target: {fileID: 842885141869678076, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: thingsToSay.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 842885141869678076, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: dialogueController
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 842885141869678076, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: thingsToSay.Array.data[0]
+      value: Hi!
+      objectReference: {fileID: 0}
+    - target: {fileID: 842885141869678076, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: thingsToSay.Array.data[1]
+      value: You there, you need to help me!
+      objectReference: {fileID: 0}
+    - target: {fileID: 842885141869678076, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: thingsToSay.Array.data[2]
+      value: I'm having issues reading beacuse of the darkness here!
+      objectReference: {fileID: 0}
+    - target: {fileID: 842885141869678076, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: thingsToSay.Array.data[4]
+      value: You need to press F to lend me some of your light!
+      objectReference: {fileID: 0}
+    - target: {fileID: 842885141869678076, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: thingsToSay.Array.data[5]
+      value: Pa koda so toalni spageti.
+      objectReference: {fileID: 0}
+    - target: {fileID: 842885141869678076, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: thingsToSay.Array.data[6]
+      value: Pa koda so toalni spageti.
+      objectReference: {fileID: 0}
+    - target: {fileID: 842885141869678076, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: thingsToSay.Array.data[7]
+      value: Pa koda so toalni spageti.
+      objectReference: {fileID: 0}
+    - target: {fileID: 842885141869678076, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: thingsToSay.Array.data[3]
+      value: I need someone to help me otherwise I won't be able to read at all!
+      objectReference: {fileID: 0}
+    - target: {fileID: 842885141869678076, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: nameOfCharacter
+      value: McCrab
+      objectReference: {fileID: 0}
+    - target: {fileID: 842885141869678077, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.2602053
+      objectReference: {fileID: 0}
+    - target: {fileID: 842885141869678077, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 15.065002
+      objectReference: {fileID: 0}
+    - target: {fileID: 842885141869678077, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 842885141869678077, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 842885141869678077, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 842885141869678077, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 842885141869678077, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 842885141869678077, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 842885141869678077, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 842885141869678077, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 842885141869678077, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 842885141869678079, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: m_Name
+      value: crabActor
+      objectReference: {fileID: 0}
+    - target: {fileID: 842885141869678079, guid: b5e620497311f0c47830ab2935466701,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b5e620497311f0c47830ab2935466701, type: 3}
+--- !u!4 &7111526730915263946 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 842885141869678077, guid: b5e620497311f0c47830ab2935466701,
+    type: 3}
+  m_PrefabInstance: {fileID: 7567085794087598135}
+  m_PrefabAsset: {fileID: 0}

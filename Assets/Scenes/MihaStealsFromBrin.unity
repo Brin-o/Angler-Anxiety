@@ -2403,19 +2403,23 @@ PrefabInstance:
     - target: {fileID: 1387913619725868950, guid: 8efb800cb0ab87944b9952948faa666e,
         type: 3}
       propertyPath: _data._objectReferences.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1387913619725868950, guid: 8efb800cb0ab87944b9952948faa666e,
         type: 3}
       propertyPath: _data._json
-      value: '{"declarations":{"collection":{"$content":[{"name":"speed","value":{"$content":4.0,"$type":"System.Single"},"$version":"A"},{"name":"accelDuration","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"chomp_sounds","value":{"$content":[0],"$type":"System.Collections.Generic.List`1[[UnityEngine.AudioClip,
-        UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      value: '{"declarations":{"collection":{"$content":[{"name":"speed","value":{"$content":4.0,"$type":"System.Single"},"$version":"A"},{"name":"accelDuration","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"splooshSounds","value":{"$content":[{"$content":0,"$type":"UnityEngine.Object"},{"$content":1,"$type":"UnityEngine.Object"},{"$content":2,"$type":"UnityEngine.Object"},{"$content":3,"$type":"UnityEngine.Object"}],"$type":"Ludiq.AotList"},"$version":"A"},{"name":"startingPosition","value":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"distanceFromStart","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     - target: {fileID: 1387913619725868950, guid: 8efb800cb0ab87944b9952948faa666e,
         type: 3}
       propertyPath: _data._objectReferences.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 6cd4054f6e6dd8e4db47be431d839186, type: 3}
+      objectReference: {fileID: 8300000, guid: f54298e7c95955d4a9586f5de2602160, type: 3}
+    - target: {fileID: 1387913619725868950, guid: 8efb800cb0ab87944b9952948faa666e,
+        type: 3}
+      propertyPath: _data._objectReferences.Array.data[4]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1387913619808941816, guid: 8efb800cb0ab87944b9952948faa666e,
         type: 3}
       propertyPath: m_Layer

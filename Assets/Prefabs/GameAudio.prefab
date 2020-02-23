@@ -11,9 +11,7 @@ GameObject:
   - component: {fileID: 9052941448800558478}
   - component: {fileID: 6135579168739504851}
   - component: {fileID: 5376199199069535510}
-  - component: {fileID: 5627252282855692651}
-  - component: {fileID: 4971884397195374642}
-  - component: {fileID: 8620840593411843723}
+  - component: {fileID: 5992532017649049357}
   m_Layer: 0
   m_Name: GameAudio
   m_TagString: Untagged
@@ -46,8 +44,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_PlayOnAwake: 0
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -142,10 +140,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_PlayOnAwake: 0
+  m_Volume: 0
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -227,38 +225,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5627252282855692651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1199963234681121257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"nextClip","value":null,"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
---- !u!114 &4971884397195374642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1199963234681121257}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: 35f7d483561a655418a6e2b5211ebdda, type: 2}
---- !u!114 &8620840593411843723
+--- !u!114 &5992532017649049357
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -274,8 +241,4 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1adffd8516a6c8a43b46c086f54f9241, type: 3}
   - {fileID: 8300000, guid: fb39e7fffc42ec649aea17882f52d0d6, type: 3}
   - {fileID: 8300000, guid: 28aaf7420a37a01489af8f8e60defa54, type: 3}
-  transitionClips:
-  - {fileID: 8300000, guid: 582304d3c2e75d741bd004cc3046abe4, type: 3}
-  - {fileID: 8300000, guid: 123bf36f5c60fd8419a562418d7bf6d7, type: 3}
-  - {fileID: 8300000, guid: 0682edf46c46ca740ae61bd5d89d618b, type: 3}
   clipNum: 0
