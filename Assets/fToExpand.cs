@@ -4,18 +4,35 @@ using UnityEngine;
 
 public class fToExpand : MonoBehaviour
 {
-    Light lt;
-    void Start()
-    {
-        lt = GetComponent<Light>();
-    }
+    [SerializeField]GameObject light1;
+    [SerializeField]GameObject light2;
+    [SerializeField]GameObject light3;
+    int currentLevel = 1;
+    [SerializeField]musicWrangler music;
 
-    // Update is called once per frame
+    private void Start() {
+        light1.SetActive(true);
+        light2.SetActive(false);
+        light3.SetActive(false);
+    }
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.F))
         {
             Debug.Log("Make light bigger");
+            if(currentLevel == 1)
+            {
+                light1.SetActive(false);
+                light2.SetActive(true);
+                music.clipNum = 2;
+            }
+            if(currentLevel == 3)
+            {
+                return;
+            }
+           
+            
+
         }
     }
 }
