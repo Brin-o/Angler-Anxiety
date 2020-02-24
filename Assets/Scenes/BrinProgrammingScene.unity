@@ -194,7 +194,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 682cbe4b0de3ed64a92f67f226bac6d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  whatToKill: {fileID: 1720509233}
 --- !u!1 &258485925
 GameObject:
   m_ObjectHideFlags: 0
@@ -2259,21 +2258,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameAudio
-      objectReference: {fileID: 0}
-    - target: {fileID: 6135579168739504851, guid: 39b1db85588970442b456e998319231e,
-        type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6135579168739504851, guid: 39b1db85588970442b456e998319231e,
-        type: 3}
-      propertyPath: Loop
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6135579168739504851, guid: 39b1db85588970442b456e998319231e,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9052941448800558478, guid: 39b1db85588970442b456e998319231e,
         type: 3}
@@ -4364,12 +4348,13 @@ PrefabInstance:
     - target: {fileID: 1387913619725868950, guid: 8efb800cb0ab87944b9952948faa666e,
         type: 3}
       propertyPath: _data._objectReferences.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1387913619725868950, guid: 8efb800cb0ab87944b9952948faa666e,
         type: 3}
       propertyPath: _data._json
-      value: '{"declarations":{"collection":{"$content":[{"name":"speed","value":{"$content":4.0,"$type":"System.Single"},"$version":"A"},{"name":"accelDuration","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"splooshSounds","value":{"$content":[{"$content":0,"$type":"UnityEngine.Object"},{"$content":1,"$type":"UnityEngine.Object"},{"$content":2,"$type":"UnityEngine.Object"},{"$content":3,"$type":"UnityEngine.Object"}],"$type":"Ludiq.AotList"},"$version":"A"},{"name":"startingPosition","value":{"$content":4,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"distanceFromStart","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"velocityVector","value":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      value: '{"declarations":{"collection":{"$content":[{"name":"speed","value":{"$content":4.0,"$type":"System.Single"},"$version":"A"},{"name":"accelDuration","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"splooshSounds","value":{"$content":[{"$content":0,"$type":"UnityEngine.Object"},{"$content":1,"$type":"UnityEngine.Object"},{"$content":2,"$type":"UnityEngine.Object"},{"$content":3,"$type":"UnityEngine.Object"}],"$type":"Ludiq.AotList"},"$version":"A"},{"name":"startingPosition","value":{"$content":4,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"distanceFromStart","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"velocityVector","value":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"chomp_sounds","value":{"$content":[5],"$type":"System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+        UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     - target: {fileID: 1387913619725868950, guid: 8efb800cb0ab87944b9952948faa666e,
         type: 3}
@@ -4395,7 +4380,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _data._objectReferences.Array.data[5]
       value: 
-      objectReference: {fileID: 8300000, guid: f9fba986f28ae0343b4d4dc905b4c59a, type: 3}
+      objectReference: {fileID: 8300000, guid: 6cd4054f6e6dd8e4db47be431d839186, type: 3}
     - target: {fileID: 1387913619725868950, guid: 8efb800cb0ab87944b9952948faa666e,
         type: 3}
       propertyPath: _data._objectReferences.Array.data[6]
